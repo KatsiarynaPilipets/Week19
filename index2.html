@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New posts</title>
+    <style>
+        .container {
+        text-align: center;
+        }
+    .head {
+        color: brown;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    .button {
+        width: 100px;
+        height: 50px;
+        margin-top: 15px;
+        background-color: blue;
+    }
+    </style>
+</head>
+<body class="container">
+    <div>
+        <h2 class="head">New post</h2>
+        <label for="title">Title:</label>
+        <input class="title" type="text" id="title">
+        <br>
+        <label for="body">Text:</label>
+        <textarea id="body"></textarea>
+        <br>
+        <button class="button" onclick="createPost()">Create a post</button>
+    </div>
+    <div id="posts-container">
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
